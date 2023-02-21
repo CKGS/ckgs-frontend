@@ -1,0 +1,29 @@
+
+.header-text{
+    padding: 0 30px;
+    padding-bottom: 20px;
+}
+
+.message-inner-container {
+    display: flex;
+    gap: 20px;
+    background-color: aliceblue;
+    color: var(--darkerPrimary-color);
+    padding: 20px 30px;
+}
+
+.message-inner-text{
+    width: 70%;
+}
+
+.message-img-container{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    object-fit: contain;
+    height: 300px;
+}

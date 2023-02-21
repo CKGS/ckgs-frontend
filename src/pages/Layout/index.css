@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #00507f;
+    --secondary-color: #F09846;
+    --grey-color: #F5F4F4;
+    --darkerPrimary-color: #001823;
+}
+
+.App {
+}
+
+/* header CSS */
+
+.App-header {
+    background-color: #fff;
+    box-shadow: 5px 3px 5px 2px #F5F4F4;
+    min-height: 10vh;
+    display: flex;
+    padding: 0px 10vh;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.img-container {
+    height: 100px;
+    display: flex;
+    gap: 5px
+}
+
+.img-object-1 {
+    object-fit: contain;
+    height: 100%;
+}
+
+.img-object-2 {
+    object-fit: contain;
+    height: 100%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--darkerPrimary-color);
+}
+
+/* footer CSS */
+
+.App-footer {
+    background-color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.social-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.section-one {
+    padding-right: 20px;
+}
+
+.section-two {
+    padding-left: 20px;
+    border-left: 2px solid #fff;
+    font-size: small;
+}
+
+.media-container {
+    cursor: pointer;
+}
+
+.address-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    display: block;
+    width: 80%;
+    text-align: center
+}
+
+.phone-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.copyright-container {
+    background-color: var(--darkerPrimary-color);
+    padding: 10px 5px;
+    font-size: small;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

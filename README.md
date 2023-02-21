@@ -68,3 +68,24 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## Note from Author
+
+This project is was started on 24 January 2023. 
+This project was undertaken by the Dev - Arpan Singh
+The purpose of the project is develop an end to end website which will function fully. 
+
+
+
+-----------------------------------------------------------------------------
+Frameworks decision. 
+
+End to End
+Frontend - React js
+
+Base Color : 
+    #00507F
+    #00507F
+    #00507F
+    https://coolors.co/ffffff-f5f4f4-f09846-00507f-001823

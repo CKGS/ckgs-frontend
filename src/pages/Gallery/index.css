@@ -1,0 +1,7 @@
+.container-main-gallery {
+    text-align: center;
+    color: rgb(47, 46, 46) ;
+    min-height: 100vh;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(240,248,255,1) 54%, rgba(240,248,255,1) 100%);    
+}
