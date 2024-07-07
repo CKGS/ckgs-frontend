@@ -2,6 +2,12 @@
     text-align: center;
     color: rgb(47, 46, 46) ;
     min-height: 100vh;
+    max-width: 1300px;
+    padding: 0 10%;
     background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(240,248,255,1) 54%, rgba(240,248,255,1) 100%);    
+    /* background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(240,248,255,1) 54%, rgba(240,248,255,1) 100%); */
+    
+}
+
+.container-img-gallery{
 }

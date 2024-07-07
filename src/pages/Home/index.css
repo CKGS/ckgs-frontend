@@ -2,7 +2,12 @@
     color: var(--darkerPrimary-color);
     min-height: 100vh;
     background: rgb(255,255,255);
-    background: linear-gradient(180deg, rgba(255,255,255,1) 25%, rgba(240,248,255,1) 54%, rgba(240,248,255,1) 100%);    
+    max-width: 1300px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
 }
 
 .carousel-container{
@@ -14,8 +19,6 @@
 }
 img {
     object-fit: cover;
-    width: 100%;
-    height: 600px;
 }
 .container-img-gallery {
     padding: 20px;
@@ -24,4 +27,118 @@ img {
 gallery-img-item {
         width: 25% ;
         text-align: center;
+}
+
+.container-content-home{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    flex-grow: 1 1;
+}
+
+.container-content-text{
+    /* width: 50%; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-content-text > p {
+    text-align: center;
+}
+
+.container-content-img{
+    object-fit: cover;
+}
+
+.container-link-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.container-link-section-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.container-link-section-card{
+    width: 50%;
+    margin: 2rem;
+    background-color: #fff;
+    cursor: pointer ;
+}
+
+.container-link-section-card:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-image-text-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.link-image-container{
+    width: 40%;
+}
+
+/* text part for the link */
+
+
+.link-text-container{
+    
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+
+}
+
+.link-text-container-caption{
+
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.link-text-container-brief{
+    font-size: 1.3em;
+    color: #555;
+
+}
+
+/* media Queries */
+
+@media screen and (max-width: 900px) {
+    .container-link-section-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .container-link-section-card{
+        width: 90%;
+        
+    }
+
+    
+}
+
+@media screen and (min-width: 800px) {
+    .navbar-menu{
+        display: none;
+    }
+    
 }

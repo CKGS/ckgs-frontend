@@ -1,14 +1,8 @@
 import React from "react";
-
+import "./index.css";
 
 function Facilities() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          Hello, from Facilities
-        </header>
-      </div>
-    );
-  }
-  
-  export default Facilities;
+  return <div className="container-main-facilities"></div>;
+}
+
+export default Facilities;

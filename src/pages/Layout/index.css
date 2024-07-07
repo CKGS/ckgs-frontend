@@ -6,20 +6,54 @@
 }
 
 .App {
+    padding-top: 10vh;
 }
 
 /* header CSS */
 
 .App-header {
     background-color: #fff;
-    box-shadow: 5px 3px 5px 2px #F5F4F4;
     min-height: 10vh;
     display: flex;
     padding: 0px 10vh;
     align-items: center;
     justify-content: space-between;
     color: white;
+    position: fixed;
+    top: 0;
+    z-index: 2; 
+    width: calc(100%  - 20vh);
 }
+
+/* For handling the scroll */
+
+.at-top {
+    
+  }
+  
+  .not-at-top {
+    box-shadow: 5px 3px 5px 2px #F5F4F4;
+  }
+
+/* Carousel CSS */
+
+.carousel-main-container {
+    max-width: 1000px; /* Adjust the max width as needed */
+    margin: 0 auto;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px; /* Adjust the height as needed */
+  }
+  
+  .carousel-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* or `contain` or `fill` depending on your need */
+  }
 
 .img-container {
     height: 100px;
@@ -55,36 +89,49 @@ a:visited {
     color: var(--darkerPrimary-color);
 }
 
+/* Main CSS */
+
+.App-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
 /* footer CSS */
 
 .App-footer {
-    background-color: var(--grey-color);
+    background-color: #001823;
     display: flex;
     flex-direction: column;
+    border-radius: 5% 5% 0 0;
 
 }
 
 .social-container {
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
 
+    
 }
 
 .section-one {
-    padding-right: 20px;
+    
 }
 
 .section-two {
-    padding-left: 20px;
-    border-left: 2px solid #fff;
     font-size: small;
-}
-
-.media-container {
-    cursor: pointer;
+    color: white;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .address-container {
@@ -99,12 +146,12 @@ iframe {
     text-align: center
 }
 
-.phone-container {
+.media-container {
     margin-top: 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2px;
+    gap: 10px;
+    font-size: x-large;
+
 }
 
 .copyright-container {
@@ -112,5 +159,45 @@ iframe {
     padding: 10px 5px;
     font-size: small;
     color: #fff;
+    border-top: 1px solid #F5F4F4;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar addition of the Header */
+.navbar-menu{
+    color: var(--darkerPrimary-color);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+/* media Queries */
+
+@media screen and (max-width: 800px) {
+
+    .link-container-media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        list-style-type: none;
+        text-decoration: none;
+        color: var(--darkerPrimary-color) !important;
+    }
+    .link-container{
+        display: none;
+    }
+    .App-header{
+        justify-content: space-between;
+    }
+    .social-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .navbar-menu{
+        display: none;
+    }
+    
 }
