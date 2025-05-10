@@ -3,10 +3,17 @@
     min-height: 100vh;
     background: rgb(255,255,255);
     max-width: 1300px;
-    padding: 0 40px;
 }
 
-.academics-header{
-    
-
+@media screen and (max-width: 800px) {
+    .acad-images-responsive{
+        float: none !important;
+        /* margin: 10px 0; */
+        margin: 0 !important;
+        width: 100% !important;
+        align-items: center;
+    }
+    .acad-images-responsive:first{
+        display: none;
+    }
 }

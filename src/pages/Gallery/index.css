@@ -9,5 +9,26 @@
     
 }
 
-.container-img-gallery{
+.gallery-image-size-class {
+    width: 300px;
+    height: 300px;
+    justify-content: center;
+    display: "flex";
+    align-content: center,
 }
+@media screen and (max-width: 1200px) {
+    .gallery-img-item {
+        width: 50% !important;
+        align-items: center;
+        text-align: center;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    .gallery-img-item {
+        width: 100% !important;
+        align-items: center;
+        text-align: center;
+    }  
+}
+

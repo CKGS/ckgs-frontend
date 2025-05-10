@@ -1,0 +1,51 @@
+/* src/components/NewsBanner.css */
+.news-banner {
+    background: var(--primary-color);
+    color: var(--grey-color);
+    /* color: blueviolet; */
+    /* font-weight: bold; */
+    font-size: 0.8em;
+    position: fixed;
+    top: 100px;
+    z-index: 100;
+    width: 100%;
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black; */
+    overflow: hidden;
+    padding: 5px 0;
+  }
+  
+  .ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 25px;
+  }
+  
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: ticker 25s linear infinite;
+    align-items: center;
+  }
+  
+  .ticker-item {
+    display: inline-block;
+    padding: 0 1rem;
+  }
+  
+  .separator {
+    color: var(--secondary-color);
+    margin:  0 1rem;
+  }
+  
+  @keyframes ticker {
+    0% {
+      transform: translateX(5%);
+    }
+    100% {
+      transform: translateX(-110%);
+    }
+  }
+  

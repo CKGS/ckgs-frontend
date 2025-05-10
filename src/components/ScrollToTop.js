@@ -6,7 +6,6 @@ export default function ScrollToTop({ children }) {
 
   useEffect(() => {
     const canControlScrollRestoration = "scrollRestoration" in window.history;
-    console.log(canControlScrollRestoration, "is restor");
     if (canControlScrollRestoration) {
       window.history.scrollRestoration = "manual";
     }

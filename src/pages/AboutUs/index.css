@@ -4,7 +4,6 @@
     min-height: 100vh;
     background: rgb(255,255,255);
     max-width: 1300px;
-    padding: 0 40px;
 }
 .header-text{
     padding: 0 20px;
@@ -21,7 +20,7 @@
 }
 
 .message-inner-text{
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }

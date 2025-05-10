@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+main {
+  min-height: 100vh; /* Ensures main fills at least the viewport */
+  overflow: auto;    /* Handles overflow within main */
+}
+
+a, a:visited {
+        color: black  ; /* Or your desired color */
+        text-decoration: none; /* Optional: Remove underline */
+    }
+    a:hover{
+      color : var(--secondary-color); 
+    }

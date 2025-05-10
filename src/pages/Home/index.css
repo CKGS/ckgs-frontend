@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 40px;
 }
 
 .carousel-container{
@@ -38,26 +37,27 @@ gallery-img-item {
 
 .container-content-text{
     /* width: 50%; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
-.container-content-text > p {
-    text-align: center;
+.container-content-text strong {
+    color : "bluevoilet";
 }
 
 .container-content-img{
     object-fit: cover;
+    float: right;
 }
 
 .container-link-section{
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 20px;
 }
 
 .container-link-section-inner{
@@ -86,7 +86,6 @@ gallery-img-item {
 .link-image-container{
     width: 40%;
 }
-
 /* text part for the link */
 
 
@@ -107,13 +106,14 @@ gallery-img-item {
 
     font-size: 2em;
     font-weight: bold;
-    color: #333;
+    color: var(--primary-color);
 
 }
 
 .link-text-container-brief{
     font-size: 1.3em;
     color: #555;
+    /* text-align: left; */
 
 }
 
@@ -133,6 +133,53 @@ gallery-img-item {
         
     }
 
+    .container-main-home {
+        padding: 0 !important;
+    }
+
+    .container-content-img{
+        display: block;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    
+    .link-image-text-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    }
+
+    .link-image-container{
+    width: 100%;
+    }
+    /* text part for the link */
+
+
+    .link-text-container{
+    
+    text-align: center;
+    display: flex;
+    border-radius: 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* 0.5 = 50% opacity */
+    }
+    .link-text-container-caption{
+        color: white;
+    }
+    .link-text-container-brief{
+        color: white;
+    }
+    .container-link-section{
+        gap: 0px !important;
+    }
+    .container-link-section-inner{
+        gap: 1em;
+    }
+
     
 }
 
@@ -140,5 +187,4 @@ gallery-img-item {
     .navbar-menu{
         display: none;
     }
-    
 }

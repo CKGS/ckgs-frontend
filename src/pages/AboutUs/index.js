@@ -45,27 +45,40 @@ function AboutUs() {
       </header>
       <div className="container-content-messsage">
         <Divider orientation="left">
-          <h2>From The Principal's Desk</h2>
+          <h3>From The Principal's Desk</h3>
         </Divider>
         <div className="message-inner-container">
           <div className="message-inner-text">
-            <p>Dear Readers ,</p>
             <p>
-              {" "}
-              I would like to throw some light on how to achieve success. For
-              achieving success, strong determination, self confidence, right
-              environment and a definte objective are essential.
+              <strong
+                style={{ color: "var(--primary-color)", textAlign: "center" }}
+              >
+                A message to students{" "}
+              </strong>
             </p>
+            <p>Dear Students ,</p>
             <p>
-              If you want to succeed never accept defeat and be optimistic. A
-              person with negative thinking finds everything impossible which
-              those with positive, thinking do not have impossible word in their
-              dictionary. Never curse your circumstances, rather you should
-              think about the way , how to handle the situation.
+              Success is within your reach when you combine strong
+              determination, self-confidence, a positive environment, and a
+              clear, definite goal. As students, it is essential to set your
+              objectives firmly and believe in your ability to achieve them.
             </p>
+
             <p>
-              Success is never permanent and failure is never final, so always
-              do not stop effort until you victory makes a history.
+              Remember, never accept defeat easily and always maintain an
+              optimistic mindset. Negative thinking only creates obstacles,
+              while a positive attitude opens doors to possibilities. Challenges
+              are part of the journey, but instead of blaming your
+              circumstances, focus on finding ways to overcome them with
+              resilience and creativity.
+            </p>
+
+            <p>
+              Keep in mind that success is not permanent, and failure is not the
+              end. What truly matters is your continuous effort and
+              perseverance. Never stop striving until your hard work turns into
+              a story of victory and achievement. Your dedication today will
+              shape the leaders and achievers of tomorrow.
             </p>
             <p style={{ alignSelf: "flex-end", fontWeight: "bold" }}>
               Manju Jayshree

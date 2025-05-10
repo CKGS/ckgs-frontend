@@ -18,6 +18,10 @@ import {
   WhatsAppOutlined,
 } from "@ant-design/icons";
 
+// import footer images
+
+import NotificationBanner from "../../components/Notifications/NotificationBanner";
+
 function MainLayout() {
   const [showMenuItem, setShowMenuItem] = useState(false);
   const [isAtTop, setIsAtTop] = useState(true);
@@ -38,7 +42,6 @@ function MainLayout() {
   }, []);
 
   const handleMenuClick = (value) => {
-    console.log("the value received is ", value);
     setTimeout(() => {
       setShowMenuItem(value);
     }, 200);
@@ -88,10 +91,10 @@ function MainLayout() {
                     </li>
                     <li>
                       <Link
-                        to="/facilities"
+                        to="/activities"
                         onClick={handleMenuClick.bind(this, false)}
                       >
-                        Facilities
+                        Activities
                       </Link>
                     </li>
                     <li>
@@ -116,43 +119,48 @@ function MainLayout() {
             </>
           }
           <ul className="link-container">
-            <li>
+            <li className="nav-hover-animation">
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li className="nav-hover-animation">
               <Link to="/academics">Academics</Link>
             </li>
-            <li>
-              <Link to="/facilities">Facilities</Link>
+            <li className="nav-hover-animation">
+              <Link to="/activities">Activities</Link>
             </li>
-            <li>
+            <li className="nav-hover-animation">
               <Link to="/gallery">Gallery</Link>
             </li>
-            <li>
+            <li className="nav-hover-animation">
               <Link to="/aboutus">About Us</Link>
             </li>
           </ul>
         </nav>
       </header>
       <main className="App-main">
+        <NotificationBanner />
         <Outlet />
       </main>
       <footer className="App-footer">
         <div className="social-container">
           <div className="section-one">
-            <div className="img-container">
+            <div className="img-container img-container_footer">
               <img src={SchoolLogo} className="img-object-1"></img>
-              <img src={SchoolNameWhite} className="img-object-2"></img>
+              <img src={SchoolName} className="img-object-2"></img>
             </div>
           </div>
+          <Divider orientation="vertical"></Divider>
           <div className="section-two">
             <h3>
-              Contact Us
+              Contact Details
               <PhoneFilled style={{ paddingLeft: "2px" }} />
             </h3>
-            <p>Sadabahar chowk, Namkum Ranchi, Jharkhand-834010</p>
             <p>
-              Call Us on <b>+91-9334158100</b>
+              <strong>Campus Address :</strong> Sadabahar chowk, Namkum Ranchi,
+              Jharkhand-834010
+            </p>
+            <p>
+              Reach out to us on <b>+91-9334158100</b>
             </p>
             <strong>Follow Us on </strong>
             <div className="media-container">
@@ -175,7 +183,7 @@ function MainLayout() {
           </div>
         </div>
         <div className="copyright-container">
-          Copyright <CopyrightOutlined /> 2023. All rights reserved.
+          Copyright <CopyrightOutlined /> 2025. All rights reserved.
         </div>
       </footer>
     </div>
